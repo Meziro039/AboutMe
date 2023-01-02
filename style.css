@@ -110,6 +110,8 @@ footer #Banner {
 }
 
 footer #Banner a img {
+    margin-left: 3px;
+    margin-right: 3px;
     width: min(30vw,200px);
     height: auto;
 }
