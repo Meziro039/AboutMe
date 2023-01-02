@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "mplus";
+    src: "./font/Mplus1-SemiBold.ttf";
+}
+
+*,input,textarea,select,button {
+    font-family: "mplus,system-ui";
+    word-break: break-all;
+}
+
+body {
+    background-color: #e3f2ff;
+    min-width: 250px;
+}
+
+header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: #9cbbd4;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: min(8vw,40px);
+    font-weight: bold;
+}
+
+.Block {
+    background-color: #9cbbd4;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.Block h1 {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: min(6vw,30px);
+    font-weight: bold;
+}
+
+.Block h2 {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: min(5vw,24px);
+    font-weight: bold;
+}
+
+.Block h3 {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: min(5vw,20px);
+    font-weight: bold;
+}
+
+.Block h1::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    border-bottom: 3px solid #000000;
+    left: 0;
+    bottom: -5px;
+}
+
+
+.Block h2::after,h3::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    border-bottom: 3px solid #000000;
+    bottom: -5px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+
+.Block a,div,p,span {
+    font-size: min(3vw,16px);
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    font-size: min(3vw,16px);
+}
+
+footer #Banner {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: min(3vw,16px);
+}
+
+footer #Banner a img {
+    width: min(30vw,200px);
+    height: auto;
+}
+
+#About {
+    display: flex;
+}
+
+.Icon {
+    border-radius: 50%;
+    width: min(20vw,120px);
+    height: min(20vw,120px);
+}
+
+#AboutText {
+    display: flex;
+    align-items: left;
+    align-content: center;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+#Works {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.WorksBlock {
+    display: flex;
+    align-items: left;
+    align-content: center;
+    flex-direction: column;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+.WorksBlock div {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.WorksText {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.WorksText img {
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+}
+
+.WorksText p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.MiddleTitle {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: min(6vw,26px);
+}
+
+.MiddleTitle::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000000;
+    width: 100px;
+    left: 0;
+    bottom: -3px;
+}
+
+.MiddleText {
+    font-size: min(3vw,16px);
+}
+
+#Links {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+#Links a {
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 3px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    flex-basis: calc(50% - 6px);
+    word-break: keep-all;
+}
+
+/*
+#Links {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+*/
+
+#Links a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Color */
+.Github {
+    background-color: #161b22;
+}
+
+.Misskey {
+    background-color: #75A200;
+}
+
+.Patreon {
+    background-color: #FB6856;
+}
+
+.Twitter {
+    background-color: #1d9bf0;
+}
+
+.Zenn {
+    background-color: #0F83FD;
+}
